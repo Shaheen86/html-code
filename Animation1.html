@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+  </head>
+  <body>
+<style>
+body{
+  margin:0;
+  background-image:url("https://images.pond5.com/planet-cartoon-space-animation-background-footage-090106997_prevstill.jpeg");
+  background-size:cover;
+}
+#ima{
+  width:300px;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:24px;
+  animation:shaik 2s ease-in;
+  animation-iteration-count:infinite;
+}
+
+@keyframes shaik{
+  0%{
+    transform:translate(-50%,0px);
+  }
+
+  100%{
+    transform:translate(-50%,-100vh);
+
+  }
+}
+</style>
+    <img id="ima" src="https://images.vexels.com/media/users/3/150028/isolated/preview/179559ef889bc5c45c89e0fc0c591a4c-space-rocket-kids-illustration-by-vexels.png"/>
+<!--     <img id="image" src="http://www.pngall.com/wp-content/uploads/2/Rocket-PNG-File-Download-Free.png"/> -->
+  </body>
+</html>
